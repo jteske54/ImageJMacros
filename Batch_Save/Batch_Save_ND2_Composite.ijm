@@ -1,5 +1,5 @@
 loadDir = getDirectory("Folder with files to convert");
-saveDir = getDirectory("Folder to save the files into")
+saveDir = getDirectory("Folder to save the files into");
 fileList = getFileList(loadDir);
 numberFiles = lengthOf(fileList);
 print("Processing " + numberFiles + " files...");
