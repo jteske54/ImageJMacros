@@ -1,3 +1,10 @@
+// Name: Batch_Save_ND2_Composite.ijm
+// Type: ImageJ Macro File
+// Author: Jacob Teske
+// Created: 2019-05-14
+// Modified: 2019-05-30
+// Description: Converts Nikon's proprietary .nd2 files format into both a stacked .tif file and a merged .tif file.
+
 loadDir = getDirectory("Folder with files to convert");
 saveDir = getDirectory("Folder to save the files into");
 fileList = getFileList(loadDir);
