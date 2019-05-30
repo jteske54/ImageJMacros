@@ -1,0 +1,15 @@
+name = getTitle();
+run("Split Channels");
+close("*(red)*");
+close("*(green)*");
+run("8-bit");
+setTool("freehand");
+run("Subtract Background...", "rolling=50");
+run("Set Measurements...", "area mean modal display redirect=None decimal=3");
+rename(name);
+setThreshold(39, 255);
+run("Threshold...");
+waitForUser("Adjust threshold, then click OK");
+run("Create Selection");
+resetThreshold();
+run("Measure");
