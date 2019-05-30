@@ -255,11 +255,8 @@ macro "About Startup Macros..." {
 	dummy = call("fiji.FijiTools.openEditor", title, text);
 }
 
-macro "Save As JPEG... [j]" {
-	quality = call("ij.plugin.JpegWriter.getQuality");
-	quality = getNumber("JPEG quality (0-100):", quality);
-	run("Input/Output...", "jpeg="+quality);
-	saveAs("Jpeg");
+macro "Save As TIFF... [j]" {
+	saveAs("Tiff");
 }
 
 macro "Save Inverted FITS" {
@@ -267,3 +264,14 @@ macro "Save Inverted FITS" {
 	run("FITS...", "");
 	run("Flip Vertically");
 }
+
+macro "Microscope Scales [f1]" {
+	runMacro("Microscope_Scales/Microscope_Scales")
+}
+
+macro "Batch Save ND2 Composite [f12]" {
+	runMacro("Batch_Save/Batch_Save_ND2_Composite")
+}
+
+macro "Batch Save ND2 Brightfield [f11]" {
+	runMacro("Batch_Save/Batch_Save_ND2_Brightfield")
