@@ -1,9 +1,9 @@
 // Name: Microscope_Scales.ijm
 // Type: ImageJ Macro File
 // Author: Jacob Teske
-// Created: 20180827
-// Modified: 20180828
-// Comments: 
+// Created: 2018-08-27
+// Modified: 2019-05-30
+// Description: Sets the scale of an image to predetermined values based on which microscope or objective was used to capture the image.
 
 function img1_10(getglobal) {
 	if (getglobal == 1)
