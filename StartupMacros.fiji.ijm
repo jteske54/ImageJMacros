@@ -275,3 +275,15 @@ macro "Batch Save ND2 Composite [f12]" {
 
 macro "Batch Save ND2 Brightfield [f11]" {
 	runMacro("Batch_Save/Batch_Save_ND2_Brightfield")
+
+
+macro "Batch Save ND2 One Channel [f10]" {
+	runMacro("Batch_Save/Batch_Save_ND2_OneChannel")
+	
+macro "Mito Morph Pre-Processing [f3]" {
+	runMacro("Mitochondrial_Morphology/mitotracker")
+}
+
+macro "Mito Morph ND2 Export [f2]" {
+	runMacro("Mitochondrial_Morphology/mitotracker_ND2_Export")
+}
