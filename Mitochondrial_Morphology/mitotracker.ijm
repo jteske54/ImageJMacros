@@ -19,6 +19,7 @@ saveDir = loadDir + "imagej\\";
 // retrieves a list of the files in the folder.
 
 fileList = getFileList(loadDir);
+print(lengthOf(fileList));
 
 // Makes a folder at the save file path
 

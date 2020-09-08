@@ -287,3 +287,19 @@ macro "Mito Morph Pre-Processing [f3]" {
 macro "Mito Morph ND2 Export [f2]" {
 	runMacro("Mitochondrial_Morphology/mitotracker_ND2_Export")
 }
+
+macro "TIFF to Video [f4]" {
+	runMacro("Video/TIFF_to_Video")
+}
+
+macro "Lung Slices [f5]" {
+	runMacro("Lung_Slices/LungSlices")
+}
+
+macro "DAPI Count" {
+	runMacro("Beta_Gal/dapi")
+}
+
+macro "Beta-Gal" {
+	runMacro("Beta_Gal/beta-gal")
+}
