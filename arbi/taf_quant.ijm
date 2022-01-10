@@ -1,0 +1,14 @@
+run("Split Channels");
+run("Z Project...", "projection=[Max Intensity]");
+run("8-bit");
+run("Find Edges");
+setThreshold(85, 255);
+run("Convert to Mask");
+run("Fill Holes");
+run("Analyze Particles...", "size=4-Infinity pixel circularity=0.60-1.00 exclude add");
+selectWindow("ROI Manager");
+run("Select All");
+roiManager("Combine");
+roiManager("Add");
+roiManager("Delete");
+roiManager("Select", 0);
