@@ -255,11 +255,16 @@ macro "About Startup Macros..." {
 	dummy = call("fiji.FijiTools.openEditor", title, text);
 }
 
+<<<<<<< HEAD
 macro "Save As JPEG... [j]" {
 	quality = call("ij.plugin.JpegWriter.getQuality");
 	quality = getNumber("JPEG quality (0-100):", quality);
 	run("Input/Output...", "jpeg="+quality);
 	saveAs("Jpeg");
+=======
+macro "Save As TIFF... [j]" {
+	saveAs("Tiff");
+>>>>>>> 2c194e87aa4971425ec7325bfb9c1a6f14a9fbfd
 }
 
 macro "Save Inverted FITS" {
@@ -268,6 +273,46 @@ macro "Save Inverted FITS" {
 	run("Flip Vertically");
 }
 
+<<<<<<< HEAD
 macro "Analyze_Alveoli [f1]" {
 	runMacro("Analyze_Alveoli")
+=======
+macro "Microscope Scales [f1]" {
+	runMacro("Microscope_Scales/Microscope_Scales")
+}
+
+macro "Batch Save ND2 Composite [f12]" {
+	runMacro("Batch_Save/Batch_Save_ND2_Composite")
+}
+
+macro "Batch Save ND2 Brightfield [f11]" {
+	runMacro("Batch_Save/Batch_Save_ND2_Brightfield")
+
+
+macro "Batch Save ND2 One Channel [f10]" {
+	runMacro("Batch_Save/Batch_Save_ND2_OneChannel")
+	
+macro "Mito Morph Pre-Processing [f3]" {
+	runMacro("Mitochondrial_Morphology/mitotracker")
+}
+
+macro "Mito Morph ND2 Export [f2]" {
+	runMacro("Mitochondrial_Morphology/mitotracker_ND2_Export")
+}
+
+macro "TIFF to Video [f4]" {
+	runMacro("Video/TIFF_to_Video")
+}
+
+macro "Lung Slices [f5]" {
+	runMacro("Lung_Slices/LungSlices")
+}
+
+macro "DAPI Count" {
+	runMacro("Beta_Gal/dapi")
+}
+
+macro "Beta-Gal" {
+	runMacro("Beta_Gal/beta-gal")
+>>>>>>> 2c194e87aa4971425ec7325bfb9c1a6f14a9fbfd
 }
