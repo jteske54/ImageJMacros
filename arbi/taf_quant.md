@@ -11,6 +11,7 @@ ___
 - [TAF Quantification](#taf-quantification)
   - [Description](#description)
   - [Macro Installation](#macro-installation)
+  - [ImageJ Setup](#imagej-setup)
   - [Usage](#usage)
 ___
 ## Description
@@ -29,6 +30,12 @@ Alterations to the code can be made to accomodate different images/types, but in
 2. Within the ImageJ folder, open the *macros* folder
 3. Copy the *taf_quant.ijm* file included with these instructions into the *macros* folder
 
+## ImageJ Setup
+1. Within ImageJ, click on *Plugins > Macros > Edit*
+2. Navigate to the macros folder that you saved the macro into, and double click on *taf_quant.ijm*
+
 ## Usage
 1. Click and drag the image into ImageJ to open it.
-   a. If the image is an .nd2 file or something similar,
+   a. If the image is an .nd2 file or something similar, click and drag the image from the folder into the main ImageJ window. An open dialog will pop up. Leave everything as default and click OK
+2. Click the "Run" button in the macro window
+3. Once the script finishes running, repeat steps 1-3 on the remaining images
