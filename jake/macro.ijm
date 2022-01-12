@@ -1,0 +1,13 @@
+run("Images to Stack", "name=Stack title=[] use");
+run("8-bit");
+run("Duplicate...", "duplicate");
+run("Set Measurements...", "area integrated mean redirect=Stack decimal=3");
+setAutoThreshold("Default dark");
+//run("Threshold...");
+setThreshold(50, 255);
+//setThreshold(50, 255);
+setOption("BlackBackground", true);
+run("Convert to Mask", "method=Default background=Dark black");
+run("Analyze Particles...", "size=10-Infinity summarize stack");
+selectWindow("Stack");
+close();
